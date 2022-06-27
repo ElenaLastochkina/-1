@@ -41,3 +41,38 @@ if (number3 > max)
 }
 
 Console.WriteLine("Максимальное число: " + max);
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдает, является ли число
+// чeтным (делится ли она на два без остатка).
+//4 ->да
+//-3 ->нет
+//7 ->нет
+Console.WriteLine ("введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number%2 ==0)
+{
+    Console.WriteLine ("число четное");
+}
+else
+{
+    Console.WriteLine ("число нечетное");
+}
+
+
+
+// Задача 8: Напишите программу, которая на входе принимает число (N), 
+// а на выходе показывает все четные числа от 1 до N
+//5 ->2,4
+//8 ->2,4,6,8
+
+Console.WriteLine ("введите число");
+int numberX = Convert.ToInt32(Console.ReadLine());
+int count = 2;
+
+while(count <= numberX)
+{
+    Console.WriteLine(count + " ");
+    count += 2;
+}
+Console.WriteLine();
